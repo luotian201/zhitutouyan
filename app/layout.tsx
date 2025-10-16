@@ -82,6 +82,11 @@ export default function RootLayout({
     <html lang="zh-CN">
       <head>
         <link rel="canonical" href="https://zhitutouyan.com/" />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="1081c379-fac2-408c-a1d6-48e29f3ae596"
+        ></script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
