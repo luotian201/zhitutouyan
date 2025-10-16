@@ -11,7 +11,7 @@ export default function Footer() {
               基于AI图形识别的下一代智能投研决策平台,让投资从"模糊盘感"走向"精准预测"。
             </p>
             <p className="text-gray-400 text-sm">
-              联系人:王谦<br />
+              联系人:Qais<br />
               电话:15121095409
             </p>
           </div>

@@ -41,7 +41,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-blue-200 text-sm mb-1">联系人</div>
-                    <div className="text-xl font-semibold">王谦</div>
+                    <div className="text-xl font-semibold">Qais</div>
                   </div>
                 </div>
 
