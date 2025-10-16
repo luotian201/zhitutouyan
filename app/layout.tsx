@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://zhitutouyan.com'),
   title: "智图投研 - 基于AI图形识别的下一代智能投研决策平台",
   description: "智图投研利用先进的AI图形识别技术，为投资者提供可回溯、可量化的历史规律支撑，精准匹配K线形态，助力投资决策。",
-  keywords: "AI投研, 智能投资, K线分析, 量化交易, 图形识别, 金融科技, 智图投研",
   authors: [{ name: "智图投研" }],
   creator: "智图投研",
   publisher: "智图投研",
