@@ -8,9 +8,15 @@
     --foreground: 222.2 84% 4.9%;
   }
 
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   body {
     @apply bg-white text-gray-900;
     font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
@@ -18,12 +24,44 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Performance optimizations */
+  .gpu-accelerate {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    * {
+      -webkit-overflow-scrolling: touch;
+    }
+  }
 }
 
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
+/* Optimize animations for mobile */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Grid background pattern */
+.bg-grid-slate-900\/\[0\.02\] {
+  background-image: linear-gradient(to right, rgba(15, 23, 42, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+}
+
+/* Modern gradient styles */
 .gradient-bg {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
@@ -33,4 +71,28 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Loading optimization - critical CSS */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Backdrop blur fallback */
+@supports not (backdrop-filter: blur(10px)) {
+  .backdrop-blur-md,
+  .backdrop-blur-sm,
+  .backdrop-blur-lg {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
 }
