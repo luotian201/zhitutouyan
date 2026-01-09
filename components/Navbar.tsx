@@ -72,6 +72,14 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
+            <a
+              href="https://ztwd.top/#/index"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 px-4 py-2 rounded-lg font-medium text-blue-600 border border-blue-100 bg-blue-50 hover:bg-blue-100 hover:border-blue-200 transition-all duration-300"
+            >
+              产品网站
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -109,6 +117,14 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
+            <a
+              href="https://ztwd.top/#/index"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-4 py-3 text-blue-600 hover:bg-blue-50 rounded-lg font-medium transition-colors duration-300"
+            >
+              产品网站
+            </a>
           </div>
         </div>
       </div>

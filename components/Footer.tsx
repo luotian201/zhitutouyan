@@ -44,6 +44,16 @@ export default function Footer() {
                   联系我们
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://ztwd.top/#/index"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  产品网站
+                </a>
+              </li>
             </ul>
           </div>
 
